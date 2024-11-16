@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen Cambiante</title>
+    <style>
+        /* Estilos básicos para centrar la imagen */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        img {
+            width: 80%; /* Ajusta el tamaño de la imagen */
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Imagen inicial (imagen1) -->
+    <img id="imagen" src="imagen1.jpg" alt="Imagen Inicial">
+
+    <script>
+        // Espera 5 segundos antes de cambiar la imagen
+        setTimeout(function() {
+            // Cambia la fuente de la imagen después de 5 segundos
+            document.getElementById('imagen').src = 'imagen2.jpg';
+        }, 3000); // 3000 ms = 3 segundos
+    </script>
+</body>
+</html>
